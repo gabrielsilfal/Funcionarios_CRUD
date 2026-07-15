@@ -24,11 +24,11 @@ public class FuncionarioMapper {
         return dto;
     }
     
-    public FuncionarioResponseDTO toResponseDTO(Funcionario funcionario) {
+    public FuncionarioResponseDTO toResponseDTO(Funcionario f) {
         return new FuncionarioResponseDTO(
-                funcionario.getNome(),
-                funcionario.getCargo(),
-                funcionario.getSalario()
+                f.getNome(),
+                f.getCargo(),
+                f.getSalario()
         );
     }
 }
